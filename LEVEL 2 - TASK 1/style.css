@@ -1,0 +1,108 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	font-family: Gotham Rounded, sans-serif;
+	font-weight: normal;
+  }
+  
+  body {
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(to right, #e96443 , #904e95);
+  }
+
+ .name{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: -20px;
+ }
+ 
+ h1{
+	color: white;
+	margin-top: 40px;
+	margin-bottom: -68px;
+ }
+
+ h6{
+	text-align: center;
+	margin-top: 14px;
+	font-weight: bold;
+	font-size: 13px;
+	word-spacing: 5px;
+	letter-spacing: 1px;
+ }
+
+ p{
+	height: 10px;
+	display: none;
+ }
+
+ .container{
+	width: 352px;
+    border-radius: 20px;
+    padding-left: 15px;
+	justify-content: center;
+    border: 2px solid rgb(234, 227, 227);
+    height: 546px;
+    background-color: #b7b0d8;
+	margin-left: 39%;
+	margin-top: 5%;
+	padding-left: 0px;
+	padding-right: 4px;
+  }
+
+  .calculator-grid {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	min-height: 100vh;
+	grid-template-columns: repeat(4, 80px);
+	grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+	border: 50px;
+	margin-top: -100px;
+  }
+  
+  .calculator-grid > button {
+	cursor: pointer;
+	font-size: 2rem;
+	border: 1px solid white;
+	border-radius:  25%;
+	margin-left: 5px;
+	margin-top: 5px;
+	outline: none;
+	background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .calculator-grid > button:hover {
+	background-color: rgba(255, 255, 255, .9);
+  }
+  
+  .span-two {
+	grid-column: span 2;
+  }
+  
+  .output {
+	border-radius: 12%;  
+	grid-column: 1 / -1;
+	background-color: rgba(0, 0, 0, .75);
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
+  }
+  
+  .output .previous-operand {
+	color: rgba(255, 255, 255, .75);
+	font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+	color: white;
+	font-size: 2.5rem;
+  }
+
+  h2{
+	font-family: 'Ms Madi';
+  }
